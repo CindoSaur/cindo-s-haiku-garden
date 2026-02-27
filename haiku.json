@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title_ja": "古池",
+    "title_en": "The Old Pond",
+    "lines_ja": ["古池や", "蛙飛び込む", "水の音"],
+    "lines_en": ["An old silent pond…", "A frog jumps into the pond.", "Splash! Silence again."],
+    "season": "Spring",
+    "year": "2026"
+  },
+  {
+    "id": 2,
+    "title_ja": "初しぐれ",
+    "title_en": "First Winter Rain",
+    "lines_ja": ["初しぐれ", "猿も小蓑を", "ほしげなり"],
+    "lines_en": ["First winter rain —", "even the monkey seems to want", "a little raincoat."],
+    "season": "Winter",
+    "year": "2026"
+  },
+  {
+    "id": 3,
+    "title_ja": "夏草",
+    "title_en": "Summer Grass",
+    "lines_ja": ["夏草や", "兵どもが", "夢の跡"],
+    "lines_en": ["Summer grasses —", "all that remains", "of soldiers' dreams."],
+    "season": "Summer",
+    "year": "2026"
+  },
+  {
+    "id": 4,
+    "title_ja": "菜の花や",
+    "title_en": "Rapeseed Blossoms",
+    "lines_ja": ["菜の花や", "月は東に", "日は西に"],
+    "lines_en": ["Rapeseed blossoms —", "the moon rises in the east,", "the sun sets in the west."],
+    "season": "Spring",
+    "year": "2026"
+  },
+  {
+    "id": 5,
+    "title_ja": "春の海",
+    "title_en": "Spring Sea",
+    "lines_ja": ["春の海", "ひねもすのたり", "のたりかな"],
+    "lines_en": ["The spring sea rising", "and falling, rising and", "falling, all day long."],
+    "season": "Spring",
+    "year": "2026"
+  },
+  {
+    "id": 6,
+    "title_ja": "雀の子",
+    "title_en": "Baby Sparrow",
+    "lines_ja": ["雀の子", "そこのけそこのけ", "お馬が通る"],
+    "lines_en": ["Baby sparrow —", "out of the way, out of the way,", "a horse is coming!"],
+    "season": "Spring",
+    "year": "2026"
+  },
+  {
+    "id": 7,
+    "title_ja": "やせ蛙",
+    "title_en": "Thin Frog",
+    "lines_ja": ["やせ蛙", "負けるな一茶", "これにあり"],
+    "lines_en": ["Thin little frog,", "don't give up the fight —", "Issa is here."],
+    "season": "Summer",           
+    "year": "2026"
+  },
+  {
+    "id": 8,
+    "title_ja": "冬の月",
+    "title_en": "Winter Moon",
+    "lines_ja": ["更けにけり", "寒い寒いと", "星も言う"],
+    "lines_en": ["Deep into the night —", "even the stars are saying,", "cold, so cold."],
+    "season": "Winter",
+    "year": "2026"
+  }
+]

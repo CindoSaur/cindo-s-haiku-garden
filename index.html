@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>俳句 · Haiku Garden</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400&family=IM+Fell+English:ital@0;1&family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="lang-ja">
+
+<div class="stripe-left"></div>
+
+<!-- ── READING MODE OVERLAY ── -->
+<div class="reading-overlay" id="readingOverlay">
+  <div class="reading-inner" id="readingInner">
+    <button class="reading-close" id="readingClose" aria-label="Close">
+      <span class="material-icons-round">close</span>
+    </button>
+    <div class="reading-season-bar" id="readingSeasonBar"></div>
+    <div class="reading-kanji" id="readingKanji"></div>
+    <div class="reading-title" id="readingTitle"></div>
+    <div id="readingLines"></div>
+    <div class="reading-year" id="readingYear"></div>
+    <div class="reading-nav">
+      <button class="reading-nav-btn" id="readingPrev"><span class="material-icons-round">arrow_back</span></button>
+      <button class="reading-nav-btn" id="readingCopy" title="Copy"><span class="material-icons-round">content_copy</span></button>
+      <button class="reading-nav-btn" id="readingNext"><span class="material-icons-round">arrow_forward</span></button>
+    </div>
+    <div class="reading-hint">Press ESC to close · ← → to navigate</div>
+  </div>
+</div>
+
+<header>
+  <div class="header-left">
+    <span class="eyebrow">A Collection of</span>
+    <h1 class="site-title">Cindo's Haiku Garden</h1>
+  </div>
+
+  <div class="kanji-hero">俳句</div>
+
+  <div class="header-right">
+    <div class="header-controls">
+      <div class="header-top-row">
+        <!-- Lang toggle -->
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button class="lang-btn active" id="btnJa">日本語</button>
+          <button class="lang-btn" id="btnEn">English</button>
+        </div>
+        <!-- Dark mode -->
+        <button class="dark-toggle" id="darkToggle" title="Toggle dark mode" aria-label="Toggle dark mode">
+          <span class="material-icons-round" id="darkIcon">dark_mode</span>
+        </button>
+        <!-- Sound -->
+        <div style="position:relative">
+          <button class="sound-toggle" id="soundToggle" title="Ambient sound" aria-label="Ambient sound">
+            <span class="material-icons-round" id="soundIcon">music_note</span>
+          </button>
+          <div class="sound-picker" id="soundPicker">
+            <button class="sound-opt" data-sound="rain"><span class="material-icons-round">grain</span> Rain</button>
+            <button class="sound-opt" data-sound="wind"><span class="material-icons-round">air</span> Wind</button>
+            <button class="sound-opt" data-sound="birds"><span class="material-icons-round">flutter_dash</span> Birds</button>
+            <button class="sound-opt" data-sound="stream"><span class="material-icons-round">water_drop</span> Stream</button>
+          </div>
+        </div>
+      </div>
+      <!-- Season filter -->
+      <div class="season-filter">
+        <button class="filter-btn active" data-season="All">All</button>
+        <button class="filter-btn" data-season="Spring">Spring</button>
+        <button class="filter-btn" data-season="Summer">Summer</button>
+        <button class="filter-btn" data-season="Autumn">Autumn</button>
+        <button class="filter-btn" data-season="Winter">Winter</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="stats-bar" id="statsBar" style="display:none">
+    <div class="stats-count">Showing <span id="visibleCount">0</span> poems</div>
+    <div class="stats-count" id="activeSeasonLabel">— All seasons —</div>
+  </div>
+  <div id="gallery">
+    <div class="loading-state">
+      <div class="loading-circle"></div>
+      Loading poems from the garden…
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-socials">
+    <!-- Mail -->
+    <a class="social-link" href="mailto:gglau223@gmail.com" aria-label="Email">
+      <span class="tooltip">gglau223@gmail.com</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="4" width="20" height="16" rx="2"/>
+        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+      </svg>
+    </a>
+    <a class="social-link" href="https://www.facebook.com/minh.nghia.946508" target="_blank" rel="noopener" aria-label="Facebook">
+      <span class="tooltip">Minh Nghĩa</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+      </svg>
+    </a>
+  </div>
+  <div class="footer-kanji">花 · 月 · 雪</div>
+</footer>
+
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
